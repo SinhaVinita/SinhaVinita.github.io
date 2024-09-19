@@ -1,2 +1,2 @@
-# Portfolio-VS
-Repo for my online portfolio
+# website-vinita-sinha
+Repo for my website
