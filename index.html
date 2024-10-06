@@ -1,124 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vinita Sinha | Software Engineer</title>
-    <style>
-      body {
-        font-family: "Courier New", Courier, monospace;
-        color: #fff;
-        margin: 0;
-        padding: 0;
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vinita Sinha | Software Engineer</title>
+  <meta name="description"
+    content="I'm passionate about developing applications that drive meaningful impact in people's lives.">
+  <meta name="keywords" content="Vinita Sinha, Vinita, Sinha, Software Engineer, Cornell, SWE">
+  <meta name="author" content="Vinita Sinha">
+
+  <style>
+    body {
+      font-family: "Courier New", Courier, monospace;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    #aboutme {
+      margin: 16vh 0;
+    }
+
+    @media only screen and (max-width: 600px) {
+      h2 {
+        font-size: 16pt;
       }
 
       #aboutme {
-        margin: 16vh 0;
+        margin: 8vh 0;
+      }
+    }
+
+    @media only screen and (max-width: 380px) {
+      h2 {
+        font-size: 14pt;
+      }
+    }
+
+    @keyframes wave-animation {
+      0% {
+        transform: rotate(0deg);
       }
 
-      @media only screen and (max-width: 600px) {
-        h2 {
-          font-size: 16pt;
-        }
-
-        #aboutme {
-          margin: 8vh 0;
-        }
+      10% {
+        transform: rotate(18deg);
       }
 
-      @media only screen and (max-width: 380px) {
-        h2 {
-          font-size: 14pt;
-        }
+      20% {
+        transform: rotate(-8deg);
       }
 
-      @keyframes wave-animation {
-        0% {
-          transform: rotate(0deg);
-        }
-        10% {
-          transform: rotate(18deg);
-        }
-        20% {
-          transform: rotate(-8deg);
-        }
-        30% {
-          transform: rotate(18deg);
-        }
-        40% {
-          transform: rotate(-4deg);
-        }
-        50% {
-          transform: rotate(12deg);
-        }
-        60% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(0deg);
-        }
+      30% {
+        transform: rotate(18deg);
       }
-    </style>
-  </head>
-  <body style="padding: 1.5em">
-    <header>
-      <h2>vinita sinha</h2>
-    </header>
 
-    <main style="display: flex; justify-content: center">
-      <section id="aboutme" style="max-width: 60em">
-        <h2 style="color: #d2e7f3; font-weight: 600">
-          Hi, I'm Vinita! <span
-            style="
+      40% {
+        transform: rotate(-4deg);
+      }
+
+      50% {
+        transform: rotate(12deg);
+      }
+
+      60% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+  </style>
+</head>
+
+<body style="padding: 1.5em">
+  <header>
+    <h2>vinita sinha</h2>
+  </header>
+
+  <main style="display: flex; justify-content: center">
+    <section id="aboutme" style="max-width: 60em">
+      <h2 style="color: #d2e7f3; font-weight: 600">
+        Hi, I'm Vinita! <span style="
               display: inline-block;
               animation-name: wave-animation;
               animation-duration: 2.5s;
               animation-iteration-count: infinite;
               transform-origin: 70% 70%;
-            "
-            >👋</span
-          >
-        </h2>
-        <h2 style="font-weight: 500">
-          I'm passionate about developing applications that drive meaningful
-          impact in people's lives. Through internships, technical projects with
-          engineering project teams, and CS undergraduate research, I've
-          explored different fields in software development ranging from
-          full-stack web applications to android, virtual, and augmented
-          reality.
-        </h2>
-      </section>
-    </main>
+            ">👋</span>
+      </h2>
+      <h2 style="font-weight: 500">
+        I'm passionate about developing applications that drive meaningful
+        impact in people's lives. Through internships, technical projects with
+        engineering project teams, and CS undergraduate research, I've
+        explored different fields in software development ranging from
+        full-stack web applications to android, virtual, and augmented
+        reality.
+      </h2>
+    </section>
+  </main>
 
-    <footer
-      style="
+  <footer style="
         position: fixed;
         bottom: 0;
         left: 0;
         width: 100vw;
         text-align: center;
-      "
-    >
-      <p style="margin: 0 1em; font-size: 10pt">
-        This entire website is 1.4kB (0.04% of an iPhone photo)*
-      </p>
-      <!-- *Based on the average size of an iPhone photo (4MB), and assuming gzip was used by the webserver -->
-      <p>
-        <a style="color: #fff" href="mailto:contact@vinitasinha.com"
-          >contact@vinitasinha.com</a
-        >
-        |
-        <a
-          style="color: #fff"
-          href="https://www.linkedin.com/in/yourprofile"
-          target="_blank"
-          >LinkedIn</a
-        >
-      </p>
-    </footer>
+      ">
+    <p style="margin: 0 1em; font-size: 10pt">
+      This entire website is 1.4kB (0.04% of an iPhone photo)*
+    </p>
+    <!-- *Based on the average size of an iPhone photo (4MB), and assuming gzip was used by the webserver -->
+    <p>
+      <a style="color: #fff" href="mailto:contact@vinitasinha.com">contact@vinitasinha.com</a>
+      |
+      <a style="color: #fff" href="https://www.linkedin.com/in/vinita-sinha" target="_blank">LinkedIn</a>
+    </p>
+  </footer>
 
-    <div
-      style="
+  <div style="
         position: fixed;
         top: 0;
         left: 0;
@@ -126,62 +127,37 @@
         height: 100%;
         background: linear-gradient(-30deg, #4382a600, #14386da1);
         z-index: -1;
-      "
-    ></div>
-    <svg
-      style="
+      "></div>
+  <svg style="
         position: fixed;
         top: 0;
         left: 0;
         width: 100vw;
         height: 100vh;
         z-index: -2;
-      "
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <filter id="filter" color-interpolation-filters="sRGB">
-        <feTurbulence
-          type="fractalNoise"
-          result="cloudbase"
-          baseFrequency=".0025"
-          numOctaves="5"
-          seed="24"
-        />
+      " xmlns="http://www.w3.org/2000/svg">
+    <filter id="filter" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" result="cloudbase" baseFrequency=".0025" numOctaves="5" seed="24" />
 
-        <feColorMatrix
-          in="cloudbase"
-          type="hueRotate"
-          values="0"
-          result="cloud"
-        >
-          <animate
-            attributeName="values"
-            from="0"
-            to="9999"
-            dur="899s"
-            repeatCount="indefinite"
-          />
-        </feColorMatrix>
+      <feColorMatrix in="cloudbase" type="hueRotate" values="0" result="cloud">
+        <animate attributeName="values" from="0" to="9999" dur="899s" repeatCount="indefinite" />
+      </feColorMatrix>
 
-        <feColorMatrix
-          in="cloud"
-          result="wispy"
-          type="matrix"
-          values="4 0 0 0 -1
+      <feColorMatrix in="cloud" result="wispy" type="matrix" values="4 0 0 0 -1
                   4 0 0 0 -1
                   4 0 0 0 -1
-                  0.6 0 0 0 0"
-        />
+                  0.6 0 0 0 0" />
 
-        <feFlood flood-color="#14386D" result="blue" />
+      <feFlood flood-color="#14386D" result="blue" />
 
-        <feBlend mode="screen" in2="blue" in="wispy" />
+      <feBlend mode="screen" in2="blue" in="wispy" />
 
-        <feGaussianBlur stdDeviation="4" />
+      <feGaussianBlur stdDeviation="4" />
 
-        <feComposite operator="in" in2="SourceGraphic" />
-      </filter>
-      <rect width="100%" height="100%" filter="url(#filter)" />
-    </svg>
-  </body>
+      <feComposite operator="in" in2="SourceGraphic" />
+    </filter>
+    <rect width="100%" height="100%" filter="url(#filter)" />
+  </svg>
+</body>
+
 </html>
