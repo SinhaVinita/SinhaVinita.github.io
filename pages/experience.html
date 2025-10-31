@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinita Sinha | SWE Experience</title>
+    <meta name="description"
+          content="I'm passionate about developing applications that drive meaningful impact in people's lives.">
+    <meta name="keywords" content="Vinita Sinha, Vinita, Sinha, Senior Software Engineer, Cornell, SWE, Big Tech">
+    <meta name="author" content="Vinita Sinha">
+
+    <style>
+        :root {
+            --footer-height: 68px;
+        }
+        body {
+            font-family: "Courier New", Courier, monospace;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            /*min-height: 100vh;*/
+            max-height: calc(100vh - var(--footer-height));
+            padding-bottom: var(--footer-height);
+            overflow-y: auto;
+        }
+
+        main {
+            display: flex;
+            flex: 1;
+            max-height: calc(100vh - var(--footer-height));
+            overflow: auto;
+        }
+
+        footer {
+            position: static;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            height: var(--footer-height);
+            /*line-height: var(--footer-height);*/
+        }
+
+        @media only screen and (max-width: 600px) {
+            h2 {
+                font-size: 16pt;
+            }
+        }
+
+        @media only screen and (max-width: 380px) {
+            h2 {
+                font-size: 14pt;
+            }
+        }
+
+        @keyframes wave-animation {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            10% {
+                transform: rotate(18deg);
+            }
+
+            20% {
+                transform: rotate(-8deg);
+            }
+
+            30% {
+                transform: rotate(18deg);
+            }
+
+            40% {
+                transform: rotate(-4deg);
+            }
+
+            50% {
+                transform: rotate(12deg);
+            }
+
+            60% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
+        .headerBox {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 1.5em;
+        }
+
+    </style>
+</head>
+
+<body style="padding: 1.5em">
+<header>
+    <div class="headerBox">
+        <h2>experience</h2>
+        <div style="flex-grow: 1"></div>
+        <a style="color: #fff" href="https://vinitasinha.com">
+            <h2>about me</h2>
+        </a>
+        <a style="color: #fff" href="https://drive.google.com/file/d/1SSpxUxSsii-dUuu9v21Xu4oHWz9Ol6_o/view?usp=sharing" target="_blank">
+            <h2>resume</h2>
+        </a>
+    </div>
+    <h3 id="yearsOfExperience">
+        aka what i've worked on in the past
+    </h3>
+</header>
+
+<main style="display: flex; flex-grow: 1; justify-content: left; text-align: justify-all; gap: 2em;">
+    <div style="flex: 1; gap: 1.5em">
+        <section id="fidelityInvestments" style="max-width: 60em; margin-bottom: 2em;">
+            <h2 style="color: #d2e7f3;">
+                @fidelity investments
+            </h2>
+            <h4 style="font-weight: 500; margin-top: 0.5em;">
+                full-stack developer since june 2023
+            </h4>
+            <div style="font-weight: 500; margin-left: 2em;">
+            <ul>
+                <li> build production ready <b>Angular</b> apps for Portfolio Managers and Traders</li>
+                <li> create backend services for RESTful APIs using <b>GraphQL</b>, <b>SpringBoot</b>, <b>Java</b></li>
+                <li> develop regression test suites using <b>Jest</b>, <b>Cypress</b>, and <b>Playwright</b></li>
+            </ul>
+            </div>
+        </section>
+        <section id="goldmanSachs" style="max-width: 60em; margin-bottom: 2em;">
+            <h2 style="color: #d2e7f3;">
+                @goldman sachs
+            </h2>
+            <h4 style="font-weight: 500; margin-top: 0.5em;">
+                swe intern in asset management from june 2021 to august 2021
+            </h4>
+            <div style="font-weight: 500; margin-left: 2em;">
+            <ul>
+                <li> implemented <b>decision-tree classifier</b> for risk types on balance sheet data</li>
+<!--                <li> replaced hard-coded filtering logic with custom <b>SAP IQ refiner</b> for data lake ingestion and warehouse process</li>-->
+                <li> <b>automated</b> asset risk classifications with <b>ETL process</b> <b>(14x improvement)</b></li>
+                <li> <b>improved query response times (8x)</b> by redesigning data models and domain-to-object (DTO) representations</li>
+            </ul>
+            </div>
+        </section>
+        <section id="ycombinator" style="max-width: 60em; margin-bottom: 2em;">
+            <h2 style="color: #d2e7f3;">
+                @y combinator
+            </h2>
+            <h4 style="font-weight: 500; margin-top: 0.5em;">
+                swe intern at pashi from may 2020 to august 2020
+            </h4>
+            <div style="font-weight: 500; margin-left: 2em;">
+            <ul>
+                <li> built production tracking software tooling using <b>Go</b> and <b>JS</b> to help engineers design, monitor, and optimize production lines</li>
+                <li> designed and implemented <b>JS frontend</b> for real-time data visualization dashboards</li>
+            </ul>
+            </div>
+        </section>
+    </div>
+    <div style="flex: 1; text-align: justify">
+        <section id="tesla" style="max-width: 60em; margin-bottom: 2em;">
+            <h2 style="color: #d2e7f3;">
+                @tesla
+            </h2>
+            <h4 style="font-weight: 500; margin-top: 0.5em;">
+                full-stack developer from may 2022 to june 2023
+            </h4>
+            <div style="font-weight: 500; margin-left: 2em;">
+            <ul>
+                <li> build <b>Angular frontend</b> for Tesla production software used in California, Texas, Berlin, and Shanghai factories</li>
+                <li> build backend services using <b>Go</b> and strategic caching with <b>Redis</b></li>
+                <li> implement in-house pub-sub using <b>Kafka</b> and <b>RabbitMQ</b></li>
+            </ul>
+            </div>
+        </section>
+        <section id="teslaIntern" style="max-width: 60em; margin-bottom: 2em;">
+            <h2 style="color: #d2e7f3;">
+                @tesla
+            </h2>
+            <h4 style="font-weight: 500; margin-top: 0.5em;">
+                swe intern from jan 2021 to may 2021
+            </h4>
+            <div style="font-weight: 500; margin-left: 2em;">
+            <ul>
+            <li> build <b>Angular and React user experiences</b>  to manage non-public and material information for tesla vehicles (aka shhh, no one can know about this yet)</li>
+            <li> implemented RESTful APIs for global teams using <b>Go</b> and <b>OpenAPI specs</b></li>
+            </ul>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <p style="margin: 0 1em; font-size: 10pt">
+        This entire website is 1.4kB (0.04% of an iPhone photo)*
+    </p>
+    <!-- *Based on the average size of an iPhone photo (4MB), and assuming gzip was used by the webserver -->
+    <p>
+        <a style="color: #fff" href="mailto:contact@vinitasinha.com">contact@vinitasinha.com</a>
+        |
+        <a style="color: #fff" href="https://www.linkedin.com/in/vinita-sinha" target="_blank">LinkedIn</a>
+        |
+        <a style="color: #fff" href="https://drive.google.com/file/d/1SSpxUxSsii-dUuu9v21Xu4oHWz9Ol6_o/view?usp=sharing" target="_blank">Resume</a>
+    </p>
+</footer>
+
+<div style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(-30deg, #4382a600, #14386da1);
+        z-index: -1;
+      "></div>
+<svg style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -2;
+      " xmlns="http://www.w3.org/2000/svg">
+    <filter id="filter" color-interpolation-filters="sRGB">
+        <feTurbulence type="fractalNoise" result="cloudbase" baseFrequency=".0025" numOctaves="5" seed="24" />
+
+        <feColorMatrix in="cloudbase" type="hueRotate" values="0" result="cloud">
+            <animate attributeName="values" from="0" to="9999" dur="899s" repeatCount="indefinite" />
+        </feColorMatrix>
+
+        <feColorMatrix in="cloud" result="wispy" type="matrix" values="4 0 0 0 -1
+                  4 0 0 0 -1
+                  4 0 0 0 -1
+                  0.6 0 0 0 0" />
+
+        <feFlood flood-color="#14386D" result="blue" />
+
+        <feBlend mode="screen" in2="blue" in="wispy" />
+
+        <feGaussianBlur stdDeviation="4" />
+
+        <feComposite operator="in" in2="SourceGraphic" />
+    </filter>
+    <rect width="100%" height="100%" filter="url(#filter)" />
+</svg>
+<script>
+    (function () {
+        const startDate = new Date(2019, 5, 10).getTime(); // June 10, 2019
+        const now = new Date().getTime();
+        const monthsElapsed = (now - startDate) / (1000 * 60 * 60 * 24 * 30.44);
+        const years = Math.floor(monthsElapsed / 12);
+        const months = Math.floor(monthsElapsed % 12);
+        const experienceString = years > 0 ? `${years} years and ${months} months` : '6 years';
+
+        const experienceYears = document.createElement('h3');
+        const target = document.getElementById('yearsOfExperience');
+        experienceYears.textContent = `aka what i've worked on in the past ${experienceString}`;
+        target.replaceWith(experienceYears);
+    })();
+</script>
+</body>
+
+</html>
