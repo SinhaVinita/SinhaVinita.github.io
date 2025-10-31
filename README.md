@@ -1,2 +1,2 @@
 # website-vinita-sinha
-Repo for my website
+About me, experience, resume, and LinkedIn
