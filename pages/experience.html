@@ -30,6 +30,26 @@
             flex: 1;
             max-height: calc(100vh - var(--footer-height));
             overflow: auto;
+            justify-content: left;
+            text-align: justify-all;
+            gap: 2em;
+            padding-bottom: 2em;
+        }
+
+        .column1 {
+            flex: 1;
+            gap: 1.5em;
+        }
+
+        .column2{
+            flex: 1;
+            text-align: justify;
+            padding-right: 4em;
+        }
+
+        .listStyle {
+            font-weight: 500;
+            margin-left: 2em;
         }
 
         footer {
@@ -46,11 +66,71 @@
             h2 {
                 font-size: 16pt;
             }
+
+            main {
+                display: initial;
+                flex: none;
+                max-height: calc(100vh - var(--footer-height));
+                overflow: auto;
+                justify-content: left;
+                text-align: justify-all;
+                gap: 0;
+                padding-bottom: 2em;
+            }
+
+            .column1 {
+                flex: 1;
+                gap: 0;
+                text-align: justify;
+            }
+
+            .column2{
+                flex: 1;
+                gap: 0;
+                text-align: justify;
+                padding-right: 0;
+            }
+
+            .listStyle {
+                font-weight: 500;
+                margin-left: 0;
+                margin-right: 0;
+            }
         }
 
         @media only screen and (max-width: 380px) {
             h2 {
                 font-size: 14pt;
+            }
+
+            main {
+                display: initial;
+                flex: none;
+                max-height: calc(100vh - var(--footer-height));
+                overflow: auto;
+                justify-content: left;
+                text-align: justify-all;
+                gap: 0;
+                padding-bottom: 2em;
+            }
+
+            .column1 {
+                flex: 1;
+                gap: 0;
+                text-align: justify;
+            }
+
+            .column2{
+                flex: 1;
+                gap: 0;
+                text-align: justify;
+                padding-right: 0;
+            }
+
+            .listStyle {
+                font-weight: 500;
+                margin-left: 0;
+                margin-right: 0;
             }
         }
 
@@ -115,8 +195,8 @@
     </h3>
 </header>
 
-<main style="display: flex; flex-grow: 1; justify-content: left; text-align: justify-all; gap: 2em;">
-    <div style="flex: 1; gap: 1.5em">
+<main>
+    <div class="column1">
         <section id="fidelityInvestments" style="max-width: 60em; margin-bottom: 2em;">
             <h2 style="color: #d2e7f3;">
                 @fidelity investments
@@ -124,7 +204,7 @@
             <h4 style="font-weight: 500; margin-top: 0.5em;">
                 full-stack developer since june 2023
             </h4>
-            <div style="font-weight: 500; margin-left: 2em;">
+            <div class="listStyle">
             <ul>
                 <li> build production ready <b>Angular</b> apps for Portfolio Managers and Traders</li>
                 <li> create backend services for RESTful APIs using <b>GraphQL</b>, <b>SpringBoot</b>, <b>Java</b></li>
@@ -139,7 +219,7 @@
             <h4 style="font-weight: 500; margin-top: 0.5em;">
                 swe intern from june 2021 to august 2021
             </h4>
-            <div style="font-weight: 500; margin-left: 2em;">
+            <div class="listStyle">
             <ul>
                 <li> implemented <b>decision-tree classifier</b> for risk types on balance sheet data for asset mgmt</li>
 <!--                <li> replaced hard-coded filtering logic with custom <b>SAP IQ refiner</b> for data lake ingestion and warehouse process</li>-->
@@ -155,7 +235,7 @@
             <h4 style="font-weight: 500; margin-top: 0.5em;">
                 swe intern at pashi from may 2020 to august 2020
             </h4>
-            <div style="font-weight: 500; margin-left: 2em;">
+            <div class="listStyle">
             <ul>
                 <li> built production tracking software tooling using <b>Go</b> and <b>JS</b> to help engineers design, monitor, and optimize production lines</li>
                 <li> designed and implemented <b>JS frontend</b> for real-time data visualization dashboards</li>
@@ -163,7 +243,7 @@
             </div>
         </section>
     </div>
-    <div style="flex: 1; text-align: justify; padding-right: 4em">
+    <div class="column2">
         <section id="tesla" style="max-width: 60em; margin-bottom: 2em;">
             <h2 style="color: #d2e7f3;">
                 @tesla
@@ -171,7 +251,7 @@
             <h4 style="font-weight: 500; margin-top: 0.5em;">
                 full-stack developer from may 2022 to june 2023
             </h4>
-            <div style="font-weight: 500; margin-left: 2em;">
+            <div class="listStyle">
             <ul>
                 <li> build <b>Angular frontend</b> for production software used in California, Texas, Berlin, and Shanghai</li>
                 <li> build backend services using <b>Go</b> and strategic caching with <b>Redis</b></li>
@@ -186,7 +266,7 @@
             <h4 style="font-weight: 500; margin-top: 0.5em;">
                 swe intern from jan 2021 to may 2021
             </h4>
-            <div style="font-weight: 500; margin-left: 2em;">
+            <div class="listStyle">
             <ul>
             <li> build <b>Angular and React user experiences</b>  to manage non-public and material information for tesla vehicles (aka shhh, no one can know about this yet)</li>
             <li> implemented RESTful APIs for global teams using <b>Go</b> and <b>OpenAPI specs</b></li>
@@ -201,7 +281,7 @@
             <h4 style="font-weight: 500; margin-top: 0.5em;">
                 ar/xr intern from june 2019 to august 2019
             </h4>
-            <div style="font-weight: 500; margin-left: 2em;">
+            <div class="listStyle">
                 <ul>
                     <li> developed XR app in <b>Unity (C# and .NET) </b> for real-time spatial anchoring, multi-user collaboration, and 3D annotation></li>
                     <li> delivered business impact on immersive experiences by prototyping headset-readable QR code markers for AR content persistence</li>
@@ -211,7 +291,15 @@
     </div>
 </main>
 
-<footer>
+<footer style="
+        position: static;
+        padding-bottom: 2em;
+        padding-top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+      ">
     <p style="margin: 0 1em; font-size: 10pt">
         This entire website is 17kB (~0.4% of an iPhone photo)*
     </p>
